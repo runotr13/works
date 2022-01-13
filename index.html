@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>İş Başvuru Formu</title>
+    <style>
+       #fielset{
+           font-family: cursive;
+           background: chocolate;
+           border: 2px solid black;
+           
+       }
+       #legend{
+           position: relative;
+           text-align: left;
+       }
+        #name{
+        
+            
+            position: relative;
+            left: 90px;
+        }
+        #surname{
+            position: relative;
+            left: 66px;
+        }
+        #birthady{
+            position: relative;
+            left: 34px;
+        }
+        #numara{
+            position: relative;
+            left: 66px;
+        }
+        #adres{
+            position: relative;
+            left: 78px;
+            height: 100px;
+        }
+       
+        #email{
+            position: relative;
+            left: 66px;
+        }
+        #foto{
+            position: relative;
+            left: 17px;
+        }
+        #kanGrubu{
+            position: relative;
+            left: 48px;
+        }
+        #kilo{
+            position: relative;
+            left: 76px;
+        }
+        #onediv{
+            height: 150px;
+            background-color: lawngreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid black;
+        }
+       #süre{
+           position: relative;
+           left: 7px;
+       }
+       #Aylıkgelir{
+           position: relative;
+           left: 37px;
+       }
+       #adsoyad{
+           position: relative;
+           left: 44px;
+       }
+       #telefon{
+           position: relative;
+           left: 57px;
+       }
+       #twodiv{
+           background: skyblue;
+           font-family: cursive;
+           border: 2px solid black;
+       }
+       #gönder{
+           background: aqua;
+           position: relative;
+           left: 90px;
+       }
+       #reset{
+           background: blueviolet;
+           position: relative;
+           left: 50px;
+       }
+       #puan{
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size: 18px;
+       }
+
+
+       
+        
+       
+    </style>
+</head>
+<body>
+    <form action="./result.html">
+        <fieldset id="fielset">
+            <h1>İŞ BAŞVURU KAYIT FORMU</h1>
+            <label for="name" >İsim:</label>
+            <input type="text" id="name" name="isim"  placeholder="Onur" required><br>
+            <label for="surname">Soyisim:</label>
+            <input type="text" id="surname" name="soyadi" placeholder="Karakuzu" required><br>
+            <label for="birthady">DoğumTarihi</label>
+            <input type="date" name="zaman" id="birthady" value="1997-12-17" required><br>
+            <label for="numara">Telefon:</label>
+            <input type="number" name="number" id="numara" placeholder="xxx-xxx-xx-xx" required><br>
+            <label for="adres" >Adres:</label>
+            <input type="text" id="adres" required><br>
+            <label for="email">E-posta:</label>
+            <input type="email" name="mail" id="email" placeholder="example@example.com" required><br>
+            <label for="foto">Fotoğraf Yükle</label>
+            <input type="file" name="fotoğraf" id="foto" required><br>
+            <label for="kanGrubu">Kan Grubu:</label>
+            <input type="text" placeholder="0 RH (-)" id="kanGrubu" required><br>
+            <label for="kilo">Kilonuz</label>
+            <input type="text" placeholder="70 kg" id="kilo" required><br><br>
+            <label for="">Cinsiyet:</label>
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="Cinsiyet" id="Kadın " value="kadın">
+            <label for="Kadın">Kadin</label><br><br>
+            <label for="">Medeni Hali</label>
+            <input type="radio" name="medenihali" id="bekar" checked>
+            <label for="bekar">Bekar</label>
+            <input type="radio" name="medenihali" id="evli">
+            <label for="evli">Evli</label><br><br>
+            <label for="">Seyahat Engeli :</label>
+            <input type="radio" name="seyahat" id="var">
+            <label for="var">Var</label>
+            <input type="radio" name="seyahat" id="yok">
+            <label for="yok">Yok</label><br><br>
+            <label for="">Sabıka Kaydınız:</label>
+            <input type="radio" name="sabıkaydı" id="var">
+            <label for="var">Var</label>
+            <input type="radio" name="sabıkaydı" id="yok" checked>
+            <label for="yok">Yok</label><br><br>
+            <label for="">Ehliyetiniz:</label>
+            <input type="radio" name="ehliyet" id="var">
+            <label for="ehliyet">Var</label>
+            <input type="radio" name="ehliyet" id="yok">
+            <label for="ehliyet">Yok</label><br><br>
+            <label for="">Yabancı Dil:</label>
+            <input type="text">
+            <label for="seviye">Seviyeniz</label>
+            <select name="DilSeviyesi" id="seviye">
+                <option value="Çokiyi">Çok İyi</option>
+                <option value="İyi">İyi</option>
+                <option value="Orta">Orta</option>
+                <option value="Az">Az</option>
+            </select><br><br>
+            <label for="">Çalışmak istediğiniz şehirler :</label>
+            <input type="checkbox" name="şehir" id="adana">
+            <label for="adana">Adana</label>
+            <input type="checkbox" name="İstanbul" id="İstanbul">
+            <label for="İstanbul">İstanbul</label>
+            <input type="checkbox" name="Ankara" id="ankara">
+            <label for="ankara">Ankara</label>
+            <input type="checkbox" name="İzmir" id="izmir">
+            <label for="izmir">İzmir</label>
+          </fieldset>
+          <div id="onediv">
+            <h3>ÖĞRENİM DURUMUNUZ</h3>
+            <label for="okuladı">Okul Adı:</label>
+            <input type="text" id="okuladı" required>
+            <label for="mezuntarihi">Mezun Olduğunuz Dönem</label>
+            <input type="text" id="mezuntarihi" required>
+            <label for="bölüm">Bölüm:</label>
+            <input type="text" id="bölüm" required>
+          </div>
+          <div id="twodiv">
+              <h3>REFERANSLAR</h3>
+              <label for="firma">Firma / Kuruluş</label>
+              <input type="text" id="firma" placeholder="CLARUSWAY"><br><br>
+              <label for="süre">Çalışma Süresi</label>
+              <input type="text" id="süre" placeholder="40"><br><br>
+              <label for="Aylıkgelir">Aylık Gelir</label>
+              <input type="text" id="Aylıkgelir" placeholder="100k"><br><br>
+              <label for="adsoyad">Ad Soyad</label>
+              <input type="text" id="adsoyad" placeholder="Onur Karakuzu"><br><br>
+              <label for="telefon">Telefon</label>
+              <input type="number" name="number" id="telefon"placeholder="xxx-xxx-xx-xx"><br><br>
+              <label for="points" id="puan">Puan (0 ile 10 arasında):</label>
+              <input type="range" id="points" name="points" min="0" max="10"> <br><br>  
+              <input type="reset" value="Temizle" id="reset">
+              <input type="submit" value="Gönder" id="gönder">
+              
+
+          </div>
+        </form>
+    </form>
+</body>
+</html>
